@@ -9,7 +9,7 @@ import Team from './pages/Team';
 import Reports from './pages/Reports';
 import Settings from './pages/Settings';
 
-const API_URL = 'http://localhost:5000/api/leads';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/leads';
 
 // Fallback seed data when backend is not connected
 const SEED_LEADS = [
